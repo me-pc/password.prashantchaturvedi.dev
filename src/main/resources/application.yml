@@ -1,1 +1,16 @@
-
+spring:
+  datasource:
+    username: user
+    password: password
+    url: jdbc:postgresql://localhost:54323/password_manager
+  jpa:
+    hibernate:
+      ddl-auto: create
+  liquibase:
+    enabled: false
+    change-log: db/changelog.root.xml
+logging:
+  level:
+    root: INFO
+    org.springframework.web: TRACE
+    dev.prashantchaturvedi.internals.pm: DEBUG

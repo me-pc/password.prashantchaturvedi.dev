@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  pm-pc-postgres:
+    image: postgres
+    container_name: pm-pc-postgres
+    environment:
+      POSTGRES_PASSWORD: ${PM_DB_PASSWORD}
+      POSTGRES_USER: ${PM_DB_USER}
+      POSTGRES_DB: password_manager
+    ports:
+      - "${PM_DB_PORT}:5432"
