@@ -5,9 +5,9 @@ spring:
     url: jdbc:postgresql://localhost:54323/password_manager
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: none
   liquibase:
-    enabled: false
+    enabled: true
     change-log: db/changelog.root.xml
 logging:
   level:
